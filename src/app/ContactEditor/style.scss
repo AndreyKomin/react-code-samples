@@ -1,0 +1,142 @@
+@import '~app/variables';
+
+.newContact {
+  width: 100%;
+}
+
+.header,
+.left,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 30px 20px 40px;
+}
+
+.title {
+  color: $color-blue-dark;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.btn {
+  min-width: 140px;
+  margin-left: 10px;
+}
+
+.body {
+  padding: 0 20px 35px;
+  height: calc(100vh - 105px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  background-color: $color-white;
+  padding: 20px 40px;
+  position: relative;
+
+  .row {
+    $offset: 4px;
+
+    display: flex;
+    margin-left: -$offset;
+    margin-right: -$offset;
+    margin-bottom: 9px;
+  }
+
+  .xs,
+  .sm,
+  .md,
+  .lg {
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  .xs {
+    width: 77px;
+  }
+
+  .sm {
+    width: 152px;
+  }
+
+  .md {
+    width: 187px;
+  }
+
+  .lg {
+    width: 292px;
+  }
+
+  .xl {
+    width: 339px;
+    margin-left: 44px;
+    margin-right: 44px;
+  }
+}
+
+.centered {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+.label {
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+select {
+  background: $color-white;
+  width: 100%;
+  padding: 0;
+  color: #4a4a4a;
+}
+
+.radio {
+  margin-left: 44px;
+  margin-right: 4px;
+}
+
+.radioRow {
+  display: flex;
+  height: 42px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.appended {
+  margin-top: 15px;
+  margin-left: 4px;
+
+  .appendHeader {
+    color: #4a4a4a;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .email {
+    width: 400px;
+    margin-right: 40px;
+  }
+
+  .phone {
+    width: 200px;
+    margin-right: 40px;
+  }
+}
